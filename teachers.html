@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teachers - Hawaipur Higher Secondary School</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/filter.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-left">
+            <div class="logo-text">Hawaipur HSS</div>
+            <span class="session-badge">Session: 2026-27</span>
+        </div>
+        <div class="header-right">
+            <button class="btn-logout" id="logoutBtn">Logout</button>
+        </div>
+    </header>
+
+    <nav class="app-nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="students.html" class="nav-link">Students</a>
+        <a href="teachers.html" class="nav-link active">Teachers</a>
+        <a href="fee-management.html" class="nav-link">Fee Management</a>
+        <a href="salary-management.html" class="nav-link">Salary Management</a>
+        <a href="admission-step1.html" class="nav-link">Admission</a>
+        <a href="receipts.html" class="nav-link">Receipts</a>
+        <a href="analytics.html" class="nav-link">Analytics</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+    </nav>
+
+    <main class="app-main">
+        <h2>Teacher Records</h2>
+        <div class="filter-bar">
+            <input type="text" placeholder="Search by name..." class="filter-input" />
+            <select class="filter-select">
+                <option value="">All Subjects</option>
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="English">English</option>
+            </select>
+            <button class="btn-filter">Apply Filter</button>
+        </div>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Qualification</th>
+                    <th>Experience</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>T001</td><td>Dr. S. Roy</td><td>Math</td><td>Ph.D.</td><td>15 yrs</td><td>9876543215</td></tr>
+                <tr><td>T002</td><td>Mrs. A. Bhatt</td><td>Science</td><td>M.Sc.</td><td>10 yrs</td><td>9876543216</td></tr>
+                <tr><td>T003</td><td>Mr. K. Das</td><td>English</td><td>M.A.</td><td>12 yrs</td><td>9876543217</td></tr>
+                <tr><td>T004</td><td>Ms. S. Nair</td><td>History</td><td>M.A.</td><td>8 yrs</td><td>9876543218</td></tr>
+                <tr><td>T005</td><td>Mr. P. Singh</td><td>Geography</td><td>M.Sc.</td><td>9 yrs</td><td>9876543219</td></tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="app-footer">
+        <p>Powered by <strong>Yadav web technologies</strong></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
