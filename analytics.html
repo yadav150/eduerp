@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics - Hawaipur Higher Secondary School</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/filter.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-left">
+            <div class="logo-text">Hawaipur HSS</div>
+            <span class="session-badge">Session: 2026-27</span>
+        </div>
+        <div class="header-right">
+            <button class="btn-logout" id="logoutBtn">Logout</button>
+        </div>
+    </header>
+
+    <nav class="app-nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="students.html" class="nav-link">Students</a>
+        <a href="teachers.html" class="nav-link">Teachers</a>
+        <a href="fee-management.html" class="nav-link">Fee Management</a>
+        <a href="salary-management.html" class="nav-link">Salary Management</a>
+        <a href="admission-step1.html" class="nav-link">Admission</a>
+        <a href="receipts.html" class="nav-link">Receipts</a>
+        <a href="analytics.html" class="nav-link active">Analytics</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+    </nav>
+
+    <main class="app-main">
+        <h2>Analytics Dashboard</h2>
+        <div class="chart-grid">
+            <div class="chart-box">
+                <h3>Fee Collection Trend</h3>
+                <canvas id="feeChart" width="400" height="250"></canvas>
+            </div>
+            <div class="chart-box">
+                <h3>Class-wise Student Distribution</h3>
+                <canvas id="classChart" width="400" height="250"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <p>Powered by <strong>Yadav web technologies</strong></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Page-specific chart rendering
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fee chart
+            const feeCtx = document.getElementById('feeChart').getContext('2d');
+            new Chart(feeCtx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                    datasets: [{
+                        label: 'Fee Collected ($)',
+                        data: [450, 520, 480, 610, 550],
+                        borderColor: '#2563EB',
+                        backgroundColor: 'rgba(37, 99, 235, 0.1)',
+                        tension: 0.3,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+
+            // Class distribution chart
+            const classCtx = document.getElementById('classChart').getContext('2d');
+            new Chart(classCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Class 10', 'Class 11', 'Class 12'],
+                    datasets: [{
+                        label: 'Students',
+                        data: [1, 2, 2],
+                        backgroundColor: ['#2563EB', '#3B82F6', '#60A5FA'],
+                        borderRadius: 5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
