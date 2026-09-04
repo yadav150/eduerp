@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Step 4 - Hawaipur Higher Secondary School</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/filter.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-left">
+            <div class="logo-text">Hawaipur HSS</div>
+            <span class="session-badge">Session: 2026-27</span>
+        </div>
+        <div class="header-right">
+            <button class="btn-logout" id="logoutBtn">Logout</button>
+        </div>
+    </header>
+
+    <nav class="app-nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="students.html" class="nav-link">Students</a>
+        <a href="teachers.html" class="nav-link">Teachers</a>
+        <a href="fee-management.html" class="nav-link">Fee Management</a>
+        <a href="salary-management.html" class="nav-link">Salary Management</a>
+        <a href="admission-step1.html" class="nav-link active">Admission</a>
+        <a href="receipts.html" class="nav-link">Receipts</a>
+        <a href="analytics.html" class="nav-link">Analytics</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+    </nav>
+
+    <main class="app-main">
+        <h2>Admission - Step 4 of 4: Review & Submit</h2>
+        <div class="admission-progress">
+            <span class="step done">1. Personal</span>
+            <span class="step done">2. Academic</span>
+            <span class="step done">3. Documents</span>
+            <span class="step active">4. Review</span>
+        </div>
+        <div class="review-box">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Class:</strong> 11</p>
+            <p><strong>Guardian:</strong> Mr. Doe</p>
+            <p><strong>Documents:</strong> All uploaded</p>
+        </div>
+        <div class="form-actions">
+            <button class="btn-secondary" type="button" onclick="location.href='admission-step3.html'">Previous</button>
+            <button class="btn-primary" type="button" onclick="alert('Admission submitted (demo)')">Submit</button>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <p>Powered by <strong>Yadav web technologies</strong></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
