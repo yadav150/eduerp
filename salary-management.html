@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salary Management - Hawaipur Higher Secondary School</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/filter.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-left">
+            <div class="logo-text">Hawaipur HSS</div>
+            <span class="session-badge">Session: 2026-27</span>
+        </div>
+        <div class="header-right">
+            <button class="btn-logout" id="logoutBtn">Logout</button>
+        </div>
+    </header>
+
+    <nav class="app-nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="students.html" class="nav-link">Students</a>
+        <a href="teachers.html" class="nav-link">Teachers</a>
+        <a href="fee-management.html" class="nav-link">Fee Management</a>
+        <a href="salary-management.html" class="nav-link active">Salary Management</a>
+        <a href="admission-step1.html" class="nav-link">Admission</a>
+        <a href="receipts.html" class="nav-link">Receipts</a>
+        <a href="analytics.html" class="nav-link">Analytics</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+    </nav>
+
+    <main class="app-main">
+        <h2>Salary Records</h2>
+        <div class="filter-bar">
+            <input type="text" placeholder="Search by teacher..." class="filter-input" />
+            <select class="filter-select">
+                <option value="">All Months</option>
+                <option value="Jan">January</option>
+                <option value="Feb">February</option>
+            </select>
+            <button class="btn-filter">Apply Filter</button>
+        </div>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Teacher</th>
+                    <th>Month</th>
+                    <th>Amount</th>
+                    <th>Payment Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Dr. S. Roy</td><td>Jan 2026</td><td>$2,500</td><td>2026-01-31</td><td class="status-paid">Paid</td></tr>
+                <tr><td>Mrs. A. Bhatt</td><td>Jan 2026</td><td>$2,200</td><td>2026-01-31</td><td class="status-paid">Paid</td></tr>
+                <tr><td>Mr. K. Das</td><td>Jan 2026</td><td>$2,000</td><td>2026-01-31</td><td class="status-pending">Pending</td></tr>
+                <tr><td>Ms. S. Nair</td><td>Jan 2026</td><td>$1,800</td><td>2026-01-31</td><td class="status-paid">Paid</td></tr>
+                <tr><td>Mr. P. Singh</td><td>Jan 2026</td><td>$1,900</td><td>2026-01-31</td><td class="status-pending">Pending</td></tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="app-footer">
+        <p>Powered by <strong>Yadav web technologies</strong></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
