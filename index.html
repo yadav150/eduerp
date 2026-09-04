@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hawaipur Higher Secondary School - Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Login Page -->
+    <div class="login-page" id="loginPage">
+        <div class="login-container">
+            <div class="login-card">
+                <div class="login-header">
+                    <div class="login-logo">
+                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+                            <rect x="2" y="2" width="48" height="48" rx="12" stroke="#2563EB" stroke-width="4" />
+                            <path d="M16 20L26 30L36 20" stroke="#2563EB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 30L26 40L36 30" stroke="#2563EB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 20L26 10L36 20" stroke="#2563EB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h1>Hawaipur Higher Secondary School</h1>
+                    <p class="school-subtitle">West Karbi Anglong, Assam</p>
+                    <p class="erp-badge">ERP System</p>
+                </div>
+                <form class="login-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter username" value="admin" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter password" value="admin123" />
+                    </div>
+                    <button type="submit" class="btn-primary btn-block">Sign In</button>
+                </form>
+                <div class="login-footer">
+                    <p>Developed by <strong>Yadav web technologies</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spinner Overlay -->
+    <div class="spinner-overlay" id="spinnerOverlay">
+        <div class="spinner-container">
+            <div class="spinner"></div>
+            <p>Loading, please wait...</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
