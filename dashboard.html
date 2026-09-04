@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Hawaipur Higher Secondary School</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/filter.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="app-header">
+        <div class="header-left">
+            <div class="logo-text">Hawaipur HSS</div>
+            <span class="session-badge">Session: 2026-27</span>
+        </div>
+        <div class="header-right">
+            <button class="btn-logout" id="logoutBtn">Logout</button>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="app-nav">
+        <a href="dashboard.html" class="nav-link active">Dashboard</a>
+        <a href="students.html" class="nav-link">Students</a>
+        <a href="teachers.html" class="nav-link">Teachers</a>
+        <a href="fee-management.html" class="nav-link">Fee Management</a>
+        <a href="salary-management.html" class="nav-link">Salary Management</a>
+        <a href="admission-step1.html" class="nav-link">Admission</a>
+        <a href="receipts.html" class="nav-link">Receipts</a>
+        <a href="analytics.html" class="nav-link">Analytics</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="app-main">
+        <div class="dashboard-grid">
+            <!-- Students Card -->
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                </div>
+                <div class="stat-info">
+                    <span class="stat-label">Total Students</span>
+                    <span class="stat-value">5</span>
+                </div>
+            </div>
+
+            <!-- Teachers Card -->
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                        <path d="M2 17l10 5 10-5" />
+                        <path d="M2 12l10 5 10-5" />
+                    </svg>
+                </div>
+                <div class="stat-info">
+                    <span class="stat-label">Total Teachers</span>
+                    <span class="stat-value">5</span>
+                </div>
+            </div>
+
+            <!-- Fee Collected Card -->
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 6v12" />
+                        <path d="M8 8l4-2 4 2" />
+                        <path d="M8 16l4 2 4-2" />
+                    </svg>
+                </div>
+                <div class="stat-info">
+                    <span class="stat-label">Fee Collected</span>
+                    <span class="stat-value">$4,500</span>
+                </div>
+            </div>
+
+            <!-- Salary Disbursed Card -->
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                    </svg>
+                </div>
+                <div class="stat-info">
+                    <span class="stat-label">Salary Disbursed</span>
+                    <span class="stat-value">$12,000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-section">
+            <h2>Welcome to Hawaipur Higher Secondary School ERP</h2>
+            <p>Manage all school operations seamlessly.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <p>Powered by <strong>Yadav web technologies</strong></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
