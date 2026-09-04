@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - Hawaipur Higher Secondary School</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/filter.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-left">
+            <div class="logo-text">Hawaipur HSS</div>
+            <span class="session-badge">Session: 2026-27</span>
+        </div>
+        <div class="header-right">
+            <button class="btn-logout" id="logoutBtn">Logout</button>
+        </div>
+    </header>
+
+    <nav class="app-nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="students.html" class="nav-link">Students</a>
+        <a href="teachers.html" class="nav-link">Teachers</a>
+        <a href="fee-management.html" class="nav-link">Fee Management</a>
+        <a href="salary-management.html" class="nav-link">Salary Management</a>
+        <a href="admission-step1.html" class="nav-link">Admission</a>
+        <a href="receipts.html" class="nav-link">Receipts</a>
+        <a href="analytics.html" class="nav-link">Analytics</a>
+        <a href="settings.html" class="nav-link active">Settings</a>
+    </nav>
+
+    <main class="app-main">
+        <h2>System Settings</h2>
+        <form class="settings-form">
+            <div class="form-group">
+                <label>School Name</label>
+                <input type="text" value="Hawaipur Higher Secondary School" />
+            </div>
+            <div class="form-group">
+                <label>Academic Session</label>
+                <input type="text" value="2026-27" />
+            </div>
+            <div class="form-group">
+                <label>Fee Default Amount</label>
+                <input type="text" value="$200" />
+            </div>
+            <div class="form-group">
+                <label>Late Fee Penalty</label>
+                <input type="text" value="$20" />
+            </div>
+            <div class="form-actions">
+                <button class="btn-primary" type="button" onclick="alert('Settings saved (demo)')">Save Changes</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="app-footer">
+        <p>Powered by <strong>Yadav web technologies</strong></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
