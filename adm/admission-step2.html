@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Step 2 - Hawaipur Higher Secondary School</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/filter.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-left">
+            <div class="logo-text">Hawaipur HSS</div>
+            <span class="session-badge">Session: 2026-27</span>
+        </div>
+        <div class="header-right">
+            <button class="btn-logout" id="logoutBtn">Logout</button>
+        </div>
+    </header>
+
+    <nav class="app-nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="students.html" class="nav-link">Students</a>
+        <a href="teachers.html" class="nav-link">Teachers</a>
+        <a href="fee-management.html" class="nav-link">Fee Management</a>
+        <a href="salary-management.html" class="nav-link">Salary Management</a>
+        <a href="admission-step1.html" class="nav-link active">Admission</a>
+        <a href="receipts.html" class="nav-link">Receipts</a>
+        <a href="analytics.html" class="nav-link">Analytics</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+    </nav>
+
+    <main class="app-main">
+        <h2>Admission - Step 2 of 4: Academic Details</h2>
+        <div class="admission-progress">
+            <span class="step done">1. Personal</span>
+            <span class="step active">2. Academic</span>
+            <span class="step">3. Documents</span>
+            <span class="step">4. Review</span>
+        </div>
+        <form class="admission-form">
+            <div class="form-group"><label>Previous School</label><input type="text" placeholder="School name" /></div>
+            <div class="form-group"><label>Class Applying For</label><select><option>10</option><option>11</option><option>12</option></select></div>
+            <div class="form-group"><label>Stream (if applicable)</label><select><option>Science</option><option>Arts</option><option>Commerce</option></select></div>
+            <div class="form-group"><label>Marks (Previous)</label><input type="text" placeholder="Percentage / CGPA" /></div>
+            <div class="form-actions">
+                <button class="btn-secondary" type="button" onclick="location.href='admission-step1.html'">Previous</button>
+                <button class="btn-primary" type="button" onclick="location.href='admission-step3.html'">Next Step</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="app-footer">
+        <p>Powered by <strong>Yadav web technologies</strong></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
